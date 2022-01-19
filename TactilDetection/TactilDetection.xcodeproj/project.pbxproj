@@ -25,7 +25,6 @@
 		8B602199278B00A2003A70DC /* RideRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B602198278B00A2003A70DC /* RideRequestHandler.swift */; };
 		8B77A34C2781770B008B8984 /* ListMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B77A34B2781770B008B8984 /* ListMusicModel.swift */; };
 		8B77A34E27817775008B8984 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B77A34D27817775008B8984 /* RowView.swift */; };
-		8B77A351278185D3008B8984 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B77A350278185D3008B8984 /* GoogleService-Info.plist */; };
 		8B77A35327818F97008B8984 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8B77A35227818F97008B8984 /* Podfile */; };
 		8B77A3562781912D008B8984 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8B77A3552781912D008B8984 /* FirebaseMessaging */; };
 		8B7A2578277EEE5500CBD80C /* GPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A2577277EEE5500CBD80C /* GPSView.swift */; };
@@ -71,7 +70,6 @@
 		8B602198278B00A2003A70DC /* RideRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestHandler.swift; sourceTree = "<group>"; };
 		8B77A34B2781770B008B8984 /* ListMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMusicModel.swift; sourceTree = "<group>"; };
 		8B77A34D27817775008B8984 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
-		8B77A350278185D3008B8984 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8B77A35227818F97008B8984 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = TactilDetection/Podfile; sourceTree = SOURCE_ROOT; };
 		8B77A35727819909008B8984 /* Target Support Files/Pods-TactilDetection/Pods-TactilDetection.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Target Support Files/Pods-TactilDetection/Pods-TactilDetection.debug.xcconfig"; sourceTree = "<group>"; };
 		8B77A35827819909008B8984 /* Target Support Files/Pods-TactilDetection/Pods-TactilDetection.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Target Support Files/Pods-TactilDetection/Pods-TactilDetection.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				8B7A2579277EF17700CBD80C /* Info.plist */,
 				8B77A349278176C7008B8984 /* View */,
 				8B7A2576277EEABB00CBD80C /* Sounds */,
-				8B77A350278185D3008B8984 /* GoogleService-Info.plist */,
 				8B1A82D6277D8C7900194039 /* Assets.xcassets */,
 				8B77A35227818F97008B8984 /* Podfile */,
 				8B1A82D8277D8C7900194039 /* Preview Content */,
@@ -334,7 +331,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B1A82E9277DAD9800194039 /* alarm_clock_ringing.wav in Resources */,
-				8B77A351278185D3008B8984 /* GoogleService-Info.plist in Resources */,
 				8B54A6D0278C0DFF005BD590 /* icon_sos.png in Resources */,
 				8BC272842781733D00BD43C3 /* card_reader_alarm.wav in Resources */,
 				8BC272852781733D00BD43C3 /* church_bells.wav in Resources */,
