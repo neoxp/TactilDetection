@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B0BF36E2780CDBA00CD49B9 /* NotasEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BF36D2780CDBA00CD49B9 /* NotasEditView.swift */; };
+		8B1A82D3277D8C7800194039 /* TactilDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A82D2277D8C7800194039 /* TactilDetectionApp.swift */; };
+		8B1A82D5277D8C7800194039 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A82D4277D8C7800194039 /* ContentView.swift */; };
+		8B1A82D7277D8C7900194039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A82D6277D8C7900194039 /* Assets.xcassets */; };
+		8B1A82DA277D8C7900194039 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A82D9277D8C7900194039 /* Preview Assets.xcassets */; };
+		8B1A82E1277D919200194039 /* huella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A82E0277D919200194039 /* huella.jpg */; };
+		8B1A82E3277D95A500194039 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A82E2277D95A500194039 /* SecondView.swift */; };
+		8B1A82E5277DA8D800194039 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A82E4277DA8D800194039 /* ToolsView.swift */; };
+		8B1A82E9277DAD9800194039 /* alarm_clock_ringing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1A82E8277DAD9800194039 /* alarm_clock_ringing.wav */; };
+		8B1FF01E27845147003AF454 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1FF01D27845147003AF454 /* CallKit.framework */; };
+		8B54A6D0278C0DFF005BD590 /* icon_sos.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B54A6CF278C0DFF005BD590 /* icon_sos.png */; };
+		8B60216A278ACF2E003A70DC /* AddToSiriButton in Frameworks */ = {isa = PBXBuildFile; productRef = 8B602169278ACF2E003A70DC /* AddToSiriButton */; };
+		8B602175278AE34D003A70DC /* siri.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B602174278AE34D003A70DC /* siri.png */; };
+		8B602181278AFBED003A70DC /* SiriEmergencies.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8B602180278AFBED003A70DC /* SiriEmergencies.intentdefinition */; };
+		8B602197278B007C003A70DC /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B602196278B007C003A70DC /* IntentHandler.swift */; };
+		8B602199278B00A2003A70DC /* RideRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B602198278B00A2003A70DC /* RideRequestHandler.swift */; };
+		8B77A34C2781770B008B8984 /* ListMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B77A34B2781770B008B8984 /* ListMusicModel.swift */; };
+		8B77A34E27817775008B8984 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B77A34D27817775008B8984 /* RowView.swift */; };
+		8B77A351278185D3008B8984 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B77A350278185D3008B8984 /* GoogleService-Info.plist */; };
+		8B77A35327818F97008B8984 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8B77A35227818F97008B8984 /* Podfile */; };
+		8B77A3562781912D008B8984 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8B77A3552781912D008B8984 /* FirebaseMessaging */; };
+		8B7A2578277EEE5500CBD80C /* GPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A2577277EEE5500CBD80C /* GPSView.swift */; };
+		8B7A257D277EFD0A00CBD80C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7A257C277EFD0A00CBD80C /* StoreKit.framework */; };
+		8B7A257F277EFD0E00CBD80C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7A257E277EFD0E00CBD80C /* MapKit.framework */; };
+		8B7A2581277EFD2200CBD80C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7A2580277EFD2200CBD80C /* AudioToolbox.framework */; };
+		8BC272832781733D00BD43C3 /* baby_crying.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8BC272802781733D00BD43C3 /* baby_crying.wav */; };
+		8BC272842781733D00BD43C3 /* card_reader_alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8BC272812781733D00BD43C3 /* card_reader_alarm.wav */; };
+		8BC272852781733D00BD43C3 /* church_bells.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8BC272822781733D00BD43C3 /* church_bells.wav */; };
+		8BC272872781736100BD43C3 /* ListSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC272862781736100BD43C3 /* ListSoundsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B602195278AFE62003A70DC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B0A8546277F6CD50054FF51 /* Directions.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Directions.geojson; sourceTree = "<group>"; };
+		8B0BF36D2780CDBA00CD49B9 /* NotasEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasEditView.swift; sourceTree = "<group>"; };
+		8B1A82CF277D8C7800194039 /* TactilDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TactilDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1A82D2277D8C7800194039 /* TactilDetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TactilDetectionApp.swift; sourceTree = "<group>"; };
+		8B1A82D4277D8C7800194039 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B1A82D6277D8C7900194039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B1A82D9277D8C7900194039 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B1A82E0277D919200194039 /* huella.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huella.jpg; sourceTree = "<group>"; };
+		8B1A82E2277D95A500194039 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		8B1A82E4277DA8D800194039 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		8B1A82E8277DAD9800194039 /* alarm_clock_ringing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_clock_ringing.wav; sourceTree = "<group>"; };
+		8B1FF01D27845147003AF454 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		8B54A6CF278C0DFF005BD590 /* icon_sos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_sos.png; sourceTree = "<group>"; };
+		8B602174278AE34D003A70DC /* siri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siri.png; sourceTree = "<group>"; };
+		8B602180278AFBED003A70DC /* SiriEmergencies.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SiriEmergencies.intentdefinition; sourceTree = "<group>"; };
+		8B602196278B007C003A70DC /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		8B602198278B00A2003A70DC /* RideRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestHandler.swift; sourceTree = "<group>"; };
+		8B77A34B2781770B008B8984 /* ListMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMusicModel.swift; sourceTree = "<group>"; };
+		8B77A34D27817775008B8984 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		8B77A350278185D3008B8984 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8B77A35227818F97008B8984 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = TactilDetection/Podfile; sourceTree = SOURCE_ROOT; };
+		8B77A35727819909008B8984 /* Target Support Files/Pods-TactilDetection/Pods-TactilDetection.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Target Support Files/Pods-TactilDetection/Pods-TactilDetection.debug.xcconfig"; sourceTree = "<group>"; };
+		8B77A35827819909008B8984 /* Target Support Files/Pods-TactilDetection/Pods-TactilDetection.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Target Support Files/Pods-TactilDetection/Pods-TactilDetection.release.xcconfig"; sourceTree = "<group>"; };
+		8B77A35C2781A020008B8984 /* notification.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = notification.apns; sourceTree = "<group>"; };
+		8B7A2577277EEE5500CBD80C /* GPSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSView.swift; sourceTree = "<group>"; };
+		8B7A2579277EF17700CBD80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8B7A257A277EFD0000CBD80C /* TactilDetection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TactilDetection.entitlements; sourceTree = "<group>"; };
+		8B7A257C277EFD0A00CBD80C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8B7A257E277EFD0E00CBD80C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8B7A2580277EFD2200CBD80C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8BC272802781733D00BD43C3 /* baby_crying.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = baby_crying.wav; sourceTree = "<group>"; };
+		8BC272812781733D00BD43C3 /* card_reader_alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = card_reader_alarm.wav; sourceTree = "<group>"; };
+		8BC272822781733D00BD43C3 /* church_bells.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = church_bells.wav; sourceTree = "<group>"; };
+		8BC272862781736100BD43C3 /* ListSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSoundsView.swift; sourceTree = "<group>"; };
+		8BECE159278EECDE005E639C /* Notificaciones.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notificaciones.geojson; sourceTree = "<group>"; };
+		A6E6AB2956476E4D872680BB /* Pods-TactilDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactilDetection.release.xcconfig"; path = "Target Support Files/Pods-TactilDetection/Pods-TactilDetection.release.xcconfig"; sourceTree = "<group>"; };
+		CD00DB796E6A0E01F4DA2BA7 /* Pods_TactilDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TactilDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F61D4E20B3AE56A0029BAD /* Pods-TactilDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactilDetection.debug.xcconfig"; path = "Target Support Files/Pods-TactilDetection/Pods-TactilDetection.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B1A82CC277D8C7800194039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B60216A278ACF2E003A70DC /* AddToSiriButton in Frameworks */,
+				8B77A3562781912D008B8984 /* FirebaseMessaging in Frameworks */,
+				8B7A257F277EFD0E00CBD80C /* MapKit.framework in Frameworks */,
+				8B7A257D277EFD0A00CBD80C /* StoreKit.framework in Frameworks */,
+				8B7A2581277EFD2200CBD80C /* AudioToolbox.framework in Frameworks */,
+				8B1FF01E27845147003AF454 /* CallKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68AC4922B79EE999C3A6D112 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B77A35727819909008B8984 /* Target Support Files/Pods-TactilDetection/Pods-TactilDetection.debug.xcconfig */,
+				8B77A35827819909008B8984 /* Target Support Files/Pods-TactilDetection/Pods-TactilDetection.release.xcconfig */,
+				E4F61D4E20B3AE56A0029BAD /* Pods-TactilDetection.debug.xcconfig */,
+				A6E6AB2956476E4D872680BB /* Pods-TactilDetection.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B1A82C6277D8C7800194039 = {
+			isa = PBXGroup;
+			children = (
+				8B1A82D1277D8C7800194039 /* TactilDetection */,
+				8B1A82D0277D8C7800194039 /* Products */,
+				8B7A257B277EFD0A00CBD80C /* Frameworks */,
+				68AC4922B79EE999C3A6D112 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8B1A82D0277D8C7800194039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A82CF277D8C7800194039 /* TactilDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B1A82D1277D8C7800194039 /* TactilDetection */ = {
+			isa = PBXGroup;
+			children = (
+				8BECE158278EECC5005E639C /* NotificacionesPush */,
+				8B7A257A277EFD0000CBD80C /* TactilDetection.entitlements */,
+				8BECE157278EEAD3005E639C /* TactilDetectionApp */,
+				8B54A6D1278C0E3F005BD590 /* Imatges */,
+				8B602161278AC7D1003A70DC /* Class */,
+				8B77A35D2781A0A4008B8984 /* notifiaction */,
+				8B77A34F27818499008B8984 /* Directions */,
+				8B77A34A278176E6008B8984 /* DataModel */,
+				8B7A2579277EF17700CBD80C /* Info.plist */,
+				8B77A349278176C7008B8984 /* View */,
+				8B7A2576277EEABB00CBD80C /* Sounds */,
+				8B77A350278185D3008B8984 /* GoogleService-Info.plist */,
+				8B1A82D6277D8C7900194039 /* Assets.xcassets */,
+				8B77A35227818F97008B8984 /* Podfile */,
+				8B1A82D8277D8C7900194039 /* Preview Content */,
+			);
+			path = TactilDetection;
+			sourceTree = "<group>";
+		};
+		8B1A82D8277D8C7900194039 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A82D9277D8C7900194039 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B54A6D1278C0E3F005BD590 /* Imatges */ = {
+			isa = PBXGroup;
+			children = (
+				8B602174278AE34D003A70DC /* siri.png */,
+				8B1A82E0277D919200194039 /* huella.jpg */,
+				8B54A6CF278C0DFF005BD590 /* icon_sos.png */,
+			);
+			path = Imatges;
+			sourceTree = "<group>";
+		};
+		8B602161278AC7D1003A70DC /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				8B602180278AFBED003A70DC /* SiriEmergencies.intentdefinition */,
+				8B602196278B007C003A70DC /* IntentHandler.swift */,
+				8B602198278B00A2003A70DC /* RideRequestHandler.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		8B77A349278176C7008B8984 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A2577277EEE5500CBD80C /* GPSView.swift */,
+				8B0BF36D2780CDBA00CD49B9 /* NotasEditView.swift */,
+				8B1A82E2277D95A500194039 /* SecondView.swift */,
+				8B1A82D4277D8C7800194039 /* ContentView.swift */,
+				8B1A82E4277DA8D800194039 /* ToolsView.swift */,
+				8BC272862781736100BD43C3 /* ListSoundsView.swift */,
+				8B77A34D27817775008B8984 /* RowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B77A34A278176E6008B8984 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B77A34B2781770B008B8984 /* ListMusicModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		8B77A34F27818499008B8984 /* Directions */ = {
+			isa = PBXGroup;
+			children = (
+				8B0A8546277F6CD50054FF51 /* Directions.geojson */,
+			);
+			path = Directions;
+			sourceTree = "<group>";
+		};
+		8B77A35D2781A0A4008B8984 /* notifiaction */ = {
+			isa = PBXGroup;
+			children = (
+				8B77A35C2781A020008B8984 /* notification.apns */,
+			);
+			path = notifiaction;
+			sourceTree = "<group>";
+		};
+		8B7A2576277EEABB00CBD80C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8BC272802781733D00BD43C3 /* baby_crying.wav */,
+				8BC272812781733D00BD43C3 /* card_reader_alarm.wav */,
+				8BC272822781733D00BD43C3 /* church_bells.wav */,
+				8B1A82E8277DAD9800194039 /* alarm_clock_ringing.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		8B7A257B277EFD0A00CBD80C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B1FF01D27845147003AF454 /* CallKit.framework */,
+				8B7A2580277EFD2200CBD80C /* AudioToolbox.framework */,
+				8B7A257E277EFD0E00CBD80C /* MapKit.framework */,
+				8B7A257C277EFD0A00CBD80C /* StoreKit.framework */,
+				CD00DB796E6A0E01F4DA2BA7 /* Pods_TactilDetection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BECE157278EEAD3005E639C /* TactilDetectionApp */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A82D2277D8C7800194039 /* TactilDetectionApp.swift */,
+			);
+			path = TactilDetectionApp;
+			sourceTree = "<group>";
+		};
+		8BECE158278EECC5005E639C /* NotificacionesPush */ = {
+			isa = PBXGroup;
+			children = (
+				8BECE159278EECDE005E639C /* Notificaciones.geojson */,
+			);
+			path = NotificacionesPush;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B1A82CE277D8C7800194039 /* TactilDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1A82DD277D8C7900194039 /* Build configuration list for PBXNativeTarget "TactilDetection" */;
+			buildPhases = (
+				8FA2EE1B8C2AF3F7F35516D1 /* [CP] Check Pods Manifest.lock */,
+				8B1A82CB277D8C7800194039 /* Sources */,
+				8B1A82CC277D8C7800194039 /* Frameworks */,
+				8B1A82CD277D8C7800194039 /* Resources */,
+				8B602195278AFE62003A70DC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TactilDetection;
+			packageProductDependencies = (
+				8B77A3552781912D008B8984 /* FirebaseMessaging */,
+				8B602169278ACF2E003A70DC /* AddToSiriButton */,
+			);
+			productName = TactilDetection;
+			productReference = 8B1A82CF277D8C7800194039 /* TactilDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B1A82C7277D8C7800194039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8B1A82CE277D8C7800194039 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8B1A82CA277D8C7800194039 /* Build configuration list for PBXProject "TactilDetection" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B1A82C6277D8C7800194039;
+			packageReferences = (
+				8B77A3542781912D008B8984 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8B602168278ACF2E003A70DC /* XCRemoteSwiftPackageReference "AddToSiriButton" */,
+			);
+			productRefGroup = 8B1A82D0277D8C7800194039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B1A82CE277D8C7800194039 /* TactilDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B1A82CD277D8C7800194039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1A82E9277DAD9800194039 /* alarm_clock_ringing.wav in Resources */,
+				8B77A351278185D3008B8984 /* GoogleService-Info.plist in Resources */,
+				8B54A6D0278C0DFF005BD590 /* icon_sos.png in Resources */,
+				8BC272842781733D00BD43C3 /* card_reader_alarm.wav in Resources */,
+				8BC272852781733D00BD43C3 /* church_bells.wav in Resources */,
+				8B1A82DA277D8C7900194039 /* Preview Assets.xcassets in Resources */,
+				8BC272832781733D00BD43C3 /* baby_crying.wav in Resources */,
+				8B602175278AE34D003A70DC /* siri.png in Resources */,
+				8B77A35327818F97008B8984 /* Podfile in Resources */,
+				8B1A82E1277D919200194039 /* huella.jpg in Resources */,
+				8B1A82D7277D8C7900194039 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FA2EE1B8C2AF3F7F35516D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TactilDetection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B1A82CB277D8C7800194039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1A82E3277D95A500194039 /* SecondView.swift in Sources */,
+				8B7A2578277EEE5500CBD80C /* GPSView.swift in Sources */,
+				8B602199278B00A2003A70DC /* RideRequestHandler.swift in Sources */,
+				8B0BF36E2780CDBA00CD49B9 /* NotasEditView.swift in Sources */,
+				8BC272872781736100BD43C3 /* ListSoundsView.swift in Sources */,
+				8B602181278AFBED003A70DC /* SiriEmergencies.intentdefinition in Sources */,
+				8B77A34E27817775008B8984 /* RowView.swift in Sources */,
+				8B1A82D5277D8C7800194039 /* ContentView.swift in Sources */,
+				8B77A34C2781770B008B8984 /* ListMusicModel.swift in Sources */,
+				8B1A82E5277DA8D800194039 /* ToolsView.swift in Sources */,
+				8B602197278B007C003A70DC /* IntentHandler.swift in Sources */,
+				8B1A82D3277D8C7800194039 /* TactilDetectionApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8B1A82DB277D8C7900194039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B1A82DC277D8C7900194039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B1A82DE277D8C7900194039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B77A35727819909008B8984 /* Target Support Files/Pods-TactilDetection/Pods-TactilDetection.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TactilDetection/TactilDetection.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.15;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TactilDetection/Preview Content\"";
+				DEVELOPMENT_TEAM = 63D3VC7F3D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TactilDetection/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TactilDetection;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlok data.";
+				INFOPLIST_KEY_NSSiriUsageDescription = "Siri support is used to suggest shortcuts";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.15;
+				PRODUCT_BUNDLE_IDENTIFIER = es.appdevelopment.TactilDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B1A82DF277D8C7900194039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B77A35827819909008B8984 /* Target Support Files/Pods-TactilDetection/Pods-TactilDetection.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TactilDetection/TactilDetection.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.15;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TactilDetection/Preview Content\"";
+				DEVELOPMENT_TEAM = 63D3VC7F3D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TactilDetection/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TactilDetection;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlok data.";
+				INFOPLIST_KEY_NSSiriUsageDescription = "Siri support is used to suggest shortcuts";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.15;
+				PRODUCT_BUNDLE_IDENTIFIER = es.appdevelopment.TactilDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B1A82CA277D8C7800194039 /* Build configuration list for PBXProject "TactilDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1A82DB277D8C7900194039 /* Debug */,
+				8B1A82DC277D8C7900194039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1A82DD277D8C7900194039 /* Build configuration list for PBXNativeTarget "TactilDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1A82DE277D8C7900194039 /* Debug */,
+				8B1A82DF277D8C7900194039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B602168278ACF2E003A70DC /* XCRemoteSwiftPackageReference "AddToSiriButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Appracatappra/AddToSiriButton.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		8B77A3542781912D008B8984 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B602169278ACF2E003A70DC /* AddToSiriButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B602168278ACF2E003A70DC /* XCRemoteSwiftPackageReference "AddToSiriButton" */;
+			productName = AddToSiriButton;
+		};
+		8B77A3552781912D008B8984 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B77A3542781912D008B8984 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8B1A82C7277D8C7800194039 /* Project object */;
+}

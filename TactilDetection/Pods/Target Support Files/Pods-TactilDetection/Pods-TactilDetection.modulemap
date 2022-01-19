@@ -1,0 +1,6 @@
+framework module Pods_TactilDetection {
+  umbrella header "Pods-TactilDetection-umbrella.h"
+
+  export *
+  module * { export * }
+}

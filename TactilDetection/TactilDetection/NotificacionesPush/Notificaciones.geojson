@@ -1,0 +1,10 @@
+{
+    "Simulator Target Bundle": "es.appdevelopment.TactilDetection",
+    "aps": {
+        "alert": {
+            "title": "Push Notification",
+            "subtitle": "Test Push Notifications",
+            "body" : "Testing Push Notifications on iOS Simulator",
+        }
+    }
+}

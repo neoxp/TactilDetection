@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '15.2'
+
+target 'TactilDetection' do
+  use_frameworks!
+
+  # Pods for TactilDetection 
+    
+    pod 'Firebase/Messaging'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Firestore'
+    pod 'FirebaseMessaging'
+    
+end
